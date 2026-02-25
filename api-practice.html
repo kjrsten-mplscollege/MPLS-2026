@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Random Cat & Dog Generator</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background: #fefefe;
+    }
+    #images img {
+      max-width: 300px;
+      margin: 10px;
+    }
+    button {
+      font-size: 20px;
+      padding: 10px 20px;
+      margin: 10px;
+      cursor: pointer;
+    }
+  </style>
+
+</head>
+<body>
+
+  <h1>Random Cat & Dog App</h1>
+
+  <div id="images">
+    <div id="cat-img"><p>Cat will appear here</p></div>
+    <div id="dog-img"><p>Dog will appear here</p></div>
+  </div>
+
+  <button id="btn-cat">Random cat</button>
+  <button id="btn-dog">Random dog</button>
+
+  <script>
+    const catDiv = document.getElementById("cat-img");
+    const dogDiv = document.getElementById("dog-img");
+    const catBtn = document.getElementById("btn-cat");
+    const dogBtn = document.getElementById("btn-dog");
+
+    catBtn.addEventListener("click", () => {
+      fetch("https://api.thecatapi.com/v1/images/search")
+        .then(resp => resp.json())
+        .then(data => {
+          catDiv.innerHTML = `<img src="${data[0].url}" />`;
+        })
+        .then(console.log(data.url))
+        .catch(err => console.error(err));
+    });
+
+    dogBtn.addEventListener("click", () => {
+      fetch("https://dog.ceo/api/breeds/image/random")
+        .then(resp => resp.json())
+        .then(data => {
+          dogDiv.innerHTML = `<img src="${data.message}" />`;
+        })
+        .catch(err => console.error(err));
+    });
+  </script>
+
+</body>
+</html>
