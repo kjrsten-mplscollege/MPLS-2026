@@ -102,6 +102,7 @@ body {
   align-items: center;
   max-width: 1100px;
   margin: 0 auto;
+  flex-wrap: wrap;
 }
 
 /* LEFT + RIGHT LOGOS */
