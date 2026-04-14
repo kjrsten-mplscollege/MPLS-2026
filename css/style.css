@@ -1,4 +1,6 @@
 
+
+
 #student-grid {
     display: flex;
     flex-wrap: wrap;
@@ -62,3 +64,110 @@ there.
         max-width: 200px;
     }
 }
+
+/* Reset default spacing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body background just for preview */
+body {
+  background: #d9d9d9;
+  font-family: Arial, sans-serif;
+}
+
+/* FOOTER BACKGROUND */
+.footer {
+  background: #FDF5E6; /* light beige tone */
+  padding: 40px 20px;
+  position: relative;
+}
+
+/* BLUE LINE AT TOP */
+.footer-line {
+  width: 100%;
+  height: 3px;
+  background: #2e4a9e;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* MAIN FOOTER CONTENT LAYOUT */
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* LEFT + RIGHT LOGOS */
+.footer-left img,
+.footer-right img {
+  max-width: 150px;
+  max-height: 120px;
+}
+
+/* CENTER SECTION */
+.footer-center {
+  text-align: center;
+}
+
+/* TITLE */
+.footer-center h2 {
+  font-size: 20px;
+  font-weight: 800;
+  margin-bottom: 15px;
+}
+
+/* YEARS ROW */
+.years {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 10px;
+}
+
+/* YEAR TEXT */
+.years span {
+  font-size: 14px;
+  position: relative;
+}
+
+/* OPTIONAL: small decorative icons */
+.years span::after {
+  content: "•";
+  margin-left: 10px;
+  color: #999;
+}
+
+/* Remove dot from last year */
+.years span:last-child::after {
+  content: "";
+}
+
+/* COPYRIGHT TEXT */
+.footer-center p {
+  font-size: 12px;
+  color: #000;
+} 
+
+/* RIGHT SECTION (logo + acknowledgement side-by-side) */
+.footer-right {
+  display: flex;
+  align-items: center;
+  gap: 15px; /* space between logo and acknowledgement */
+}
+
+
+
+/* Acknowledgement image */
+.acknowledgement-right img {
+  max-width: 120px;
+  height: auto;
+}
+
+
