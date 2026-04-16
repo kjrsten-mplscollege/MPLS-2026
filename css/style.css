@@ -24,6 +24,9 @@
     max-width: 300px;
 }
 
+
+
+
 /* Media Queries
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 /*
@@ -77,6 +80,204 @@ body {
   background: #d9d9d9;
   font-family: Arial, sans-serif;
 }
+
+
+
+/* STUDENT DETAIL CSS !!!! ------- */
+
+.detail-body {
+  background: #FAF6E5; 
+}
+
+/* navigation ------------------ */
+
+.detail-nav {
+  position: relative;
+  padding: 20px;
+}
+
+
+.nav-forward {
+  position: absolute;
+  top: 0;
+  right: 7px;
+
+  width: 140px;
+  height: 55px; 
+
+  background: #EF7CB1;
+  color: black;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding-bottom: 7px;
+  font-size: 18px; 
+  font-weight: bold;
+  text-decoration: none;
+
+  border-radius: 50% / 0 0 100% 100%;
+}
+
+.nav-back {
+  position: absolute;
+  top: 0;
+  left: 7px;
+
+  width: 140px;
+  height: 55px; 
+
+  background: #F26330;
+  color: black;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding-bottom: 7px;
+  font-size: 18px; 
+  font-weight: bold;
+  text-decoration: none;
+
+  border-radius: 50% / 0 0 100% 100%;
+}
+
+/* main page --------------------- */
+
+.detail-main {
+  padding: 40px;
+  padding-left: 70px;
+}
+
+.detail-layout {
+  display: flex;
+  gap: 50px;
+  align-items: flex-start;
+}
+
+/* Left side section ------------------ */
+
+.detail-card {
+  width: 380px;
+  min-height: 694.65px;
+
+  background: #ffffff;
+  padding: 25px 8px;
+  text-align: center;
+}
+
+
+/* student detail information ---------- */
+
+.detail-card h1 {
+  font-size: 32.59px;
+  font-weight: bold;
+  margin-bottom: -20px;
+}
+
+.headshot-layout {
+  width: 280px;
+  height: 280px;
+  margin: 2px auto; 
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.headshot-bg {
+  position: absolute;
+
+  width: 100%;
+  height: 100%;
+
+  background: url("../images/yellow-bg.svg") center/contain no-repeat;
+}
+
+.detail-headshot {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  position: relative;
+}
+
+
+.detail-card h2 {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 30.07px;
+  margin-top: -20px;
+  margin-bottom: 10px;
+}
+
+/* links-------- */
+
+.detail-links {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  list-style: none;
+  margin-bottom: 15px;
+  padding: 0;
+}
+
+.detail-links a {
+  background: black;
+  color: white;
+  padding: 6px 10px;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+/* student description ----*/
+
+.detail-card p {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 16px;
+  text-align: left;
+  padding: 0 16px;
+}
+
+/* Right side section ------------------ */
+
+.detail-projects {
+  display: grid;
+  grid-template-columns: repeat(2, 333.45px);
+  grid-auto-rows: auto;
+  gap: 20px 60px; 
+  justify-content: center;
+  align-content: start;
+  min-height: 500px;
+}
+
+.project-box {
+  width: 333.45px;
+  height: 244.3px;
+  background: #ccc;
+  border: 12px solid #FFCC3F;
+}
+
+/* Portfolio boxes ------ */
+
+.box-1 {
+  grid-column: 2;
+  margin-top: 40px;
+}
+
+.box-2 {
+  grid-column: 1;
+  margin-top: -60px;
+}
+
+.box-3 {
+  grid-column: 2;
+  margin-top: 80px;
+}
+
+/* END OF STUDENT DETAIL CSS */
+
+
+
 
 /* FOOTER BACKGROUND */
 .footer {
