@@ -23,7 +23,21 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
+    <!-- Header and Nav Section -->
 
+    <header>
+      <div class="header">
+        <button class="navMenu" onclick="toggleNav()">☰</button>
+        <nav class="navLinks" id="nav-links">
+          <a href="./index.html">Home</a>
+          <a href="./student-detail.html">Designers</a>
+          <a href="./credits.html">About</a>
+        </nav>
+      </div>
+    </header>
+
+    <!--End of Header / Nav-->
+  
     <h1>Mpls. College Design Show</h1>
     <h2>Hello!</h2>
 
@@ -117,5 +131,11 @@
 
     
     <script src="js/script.js"></script>
+    <script>
+      const toggleNav = () => {
+        const x = document.getElementById("nav-links");
+        x.classList.toggle("active")
+      }
+    </script>
   </body>
 </html>

@@ -372,4 +372,47 @@ body {
   height: auto;
 }
 
+/* Nav Css */
+nav {
+  font-size: 23pt;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
 
+nav a {
+  color: #000;
+  text-decoration: none;
+  background-image: url('../images/yellow-bg.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
+  padding: 10px 20px; 
+  background-size: cover;
+  font-weight: 600;
+}
+
+.navlinks.active {
+  color: #F26330;
+}
+
+@media (min-width: 768px) {
+  nav a {padding-top: 25px;}
+  .navMenu {display: none;}
+}
+
+@media screen and (max-width: 768px) {
+  .navLinks { display: none;}  
+  .navMenu {background:none; border:none;}
+
+  .navLinks.active {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+}
