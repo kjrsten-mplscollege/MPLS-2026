@@ -1,4 +1,29 @@
 
+/*
+FONTS - these are the names to use in font-family rules:
+NovecentoSansCondensedNormal
+NovecentoSansWideBold
+NovecentoSansWideUltraBold
+*/
+
+body {
+  font-family: "Raleway", Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+}
+
+h1 {
+  font-family: "NovecentoSansWideUltraBold", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+h2,
+h4,
+h5 {
+  font-family: "NovecentoSansCondensedNormal", 'Arial Narrow', sans-serif;
+}
+
+h3 {
+  font-family: "NovecentoSansWideBold", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
 
 
 #student-grid {
@@ -17,7 +42,7 @@
 }
 
 .student-card h4 {
-    font-size: 1.75rem;
+    font-size: 2.25rem;
 }
 
 .student-image {
@@ -78,7 +103,6 @@ there.
 /* Body background just for preview */
 body {
   background: #d9d9d9;
-  font-family: Arial, sans-serif;
 }
 
 
@@ -94,6 +118,8 @@ body {
 .detail-nav {
   position: relative;
   padding: 20px;
+  font-family: "NovecentoSansWideBold", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: #FAF6E5;
 }
 
 
@@ -171,7 +197,7 @@ body {
 /* student detail information ---------- */
 
 .detail-card h1 {
-  font-size: 32.59px;
+  font-size: 4rem;
   font-weight: bold;
   margin-bottom: -20px;
 }
@@ -204,8 +230,7 @@ body {
 
 
 .detail-card h2 {
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: 30.07px;
+  font-size: 3rem;
   margin-top: -20px;
   margin-bottom: 10px;
 }
@@ -225,15 +250,14 @@ body {
   background: black;
   color: white;
   padding: 6px 10px;
-  font-size: 12px;
+  font-size: 1.5rem;
   text-decoration: none;
 }
 
 /* student description ----*/
 
 .detail-card p {
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: 16px;
+  font-size: 1.75rem;
   text-align: left;
   padding: 0 16px;
 }
@@ -307,10 +331,12 @@ body {
 }
 
 /* LEFT + RIGHT LOGOS */
-.footer-left img,
+.footer-left img {
+  max-width: 170px;
+}
+
 .footer-right img {
-  max-width: 150px;
-  max-height: 120px;
+  max-width: 140px;
 }
 
 /* CENTER SECTION */
@@ -320,8 +346,7 @@ body {
 
 /* TITLE */
 .footer-center h2 {
-  font-size: 20px;
-  font-weight: 800;
+  font-size: 2.5rem;
   margin-bottom: 15px;
 }
 
@@ -335,7 +360,6 @@ body {
 
 /* YEAR TEXT */
 .years span {
-  font-size: 14px;
   position: relative;
 }
 
@@ -353,7 +377,7 @@ body {
 
 /* COPYRIGHT TEXT */
 .footer-center p {
-  font-size: 12px;
+  font-size: 1.5rem;
   color: #000;
 } 
 
@@ -368,7 +392,7 @@ body {
 
 /* Acknowledgement image */
 .acknowledgement-right img {
-  max-width: 120px;
+  max-width: 170px;
   height: auto;
 }
 
