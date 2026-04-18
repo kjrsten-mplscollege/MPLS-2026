@@ -372,4 +372,54 @@ body {
   height: auto;
 }
 
+/* Homepage Background */
+body {
+  background-image: url("../images/Background.svg");
+  background-color: #FAF6E5;
+}
 
+/* Top Logo */
+.top-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+
+h1 span
+{background-color: #FAF6E5;}
+
+/* Welcome*/
+.welcome-h2 {
+  text-align: center;
+}
+.welcome {
+  background-color: #1BAE8C;
+  width: 100%;
+  color: #FAF6E5;
+  margin: 0 auto;
+  padding: 30px;
+  margin: 40px 0px;
+
+}
+
+/* Student Images */
+.student-image {
+  width: 200 px;
+  height: 200 px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.student-info {
+  background-color: #FAF6E5;
+  margin: 2px;
+}
+
+.student-info h3 {
+  margin-bottom: 10px;
+}
+.student-info h4 {
+  margin-top: 0px;
+}
