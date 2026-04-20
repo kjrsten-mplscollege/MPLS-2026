@@ -110,7 +110,8 @@ body {
 /* STUDENT DETAIL CSS !!!! ------- */
 
 .detail-body {
-  background: #FAF6E5; 
+    background-image: url("../images/Background.svg");
+    background-color: #FAF6E5;
 }
 
 /* navigation ------------------ */
@@ -197,10 +198,12 @@ body {
 /* student detail information ---------- */
 
 .detail-card h1 {
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: bold;
   margin-bottom: -20px;
+  font-family: "NovecentoSansWideBold", sans-serif;
 }
+
 
 .headshot-layout {
   width: 280px;
