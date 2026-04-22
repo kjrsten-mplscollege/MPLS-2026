@@ -235,7 +235,7 @@ body {
 .detail-card h2 {
   font-size: 3rem;
   margin-top: -20px;
-  margin-bottom: 10px;
+  margin-bottom: 25px;
 }
 
 /* links-------- */
@@ -243,18 +243,27 @@ body {
 .detail-links {
   display: flex;
   justify-content: center;
-  gap: 8px;
+  gap: 40px;
   list-style: none;
   margin-bottom: 15px;
   padding: 0;
 }
 
 .detail-links a {
-  background: black;
-  color: white;
-  padding: 6px 10px;
-  font-size: 1.5rem;
+  width: 40px;
+  height: 40px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   text-decoration: none;
+}
+
+.detail-links img {
+  width: 60px;
+  height: 60px;
+  display: block;
 }
 
 /* student description ----*/
@@ -300,6 +309,74 @@ body {
   grid-column: 2;
   margin-top: 80px;
 }
+
+/* MOBILE student detail page css */
+
+@media (max-width: 768px) {
+
+  .detail-layout {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+     .detail-card {
+    width: 90%;
+    max-width: 380px;
+  }
+
+   .detail-main {
+    padding: 20px;
+  }
+
+  .headshot-layout {
+    width: 220px;
+    height: 220px;
+  }
+
+  .detail-headshot {
+    width: 140px;
+    height: 140px;
+  }
+
+  .detail-card h1 {
+    font-size: rem;
+    margin-bottom: -10px;
+  }
+
+  .detail-card h2 {
+    font-size: 3rem;
+    margin-top: 0;
+  }
+
+  .detail-card p {
+    font-size: 1.5rem;
+    text-align: left;
+    padding: 0 16px;
+  }
+
+
+  /* mobile project section */
+
+.detail-projects {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  .project-box {
+    width: 333.45px;   
+    height: 244.3px;  
+  }
+
+  .box-1,
+  .box-2,
+  .box-3 {
+    grid-column: auto;
+    margin-top: 0;
+  }
+
+}
+
 
 /* END OF STUDENT DETAIL CSS */
 
