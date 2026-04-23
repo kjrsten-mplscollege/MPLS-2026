@@ -23,14 +23,14 @@
   
 @font-face {
   font-family: "NovecentoSansWideBold";
-  src: url('../fonts/webFonts/NovecentoSansWideBold/font.woff2') format('woff2'), url('../fonts/webFonts/NovecentoSansWideBold/font.woff') format('woff');
+  src: url('../fonts/NovecentoSansWideBold/font.woff2') format('woff2'), url('../fonts/NovecentoSansWideBold/font.woff') format('woff');
 }
 @font-face {
   font-family: "NovecentoSansWideUltraBold";
-  src: url('webFonts/NovecentoSansWideUltraBold/font.woff2') format('woff2'), url('../fonts/webFonts/NovecentoSansWideUltraBold/font.woff') format('woff');
+  src: url('../fonts/NovecentoSansWideUltraBold/font.woff2') format('woff2'), url('../fonts/NovecentoSansWideUltraBold/font.woff') format('woff');
 }
 @font-face {
   font-family: "NovecentoSansCondensedNormal";
-  src: url('webFonts/NovecentoSansCondensedNormal/font.woff2') format('woff2'), url('../fonts/webFonts/NovecentoSansCondensedNormal/font.woff') format('woff');
+  src: url('../fonts/NovecentoSansCondensedNormal/font.woff2') format('woff2'), url('../fonts/NovecentoSansCondensedNormal/font.woff') format('woff');
 }
 
