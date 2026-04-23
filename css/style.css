@@ -488,6 +488,14 @@ body {
   justify-content: center;
   align-items: center;
   margin-top: 40px;
+  max-width: 100%;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.top-img-logo {
+  background-color: #FAF6E5;
+  max-width: 100%;
 }
 
 h1 span
