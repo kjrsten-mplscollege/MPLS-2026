@@ -181,6 +181,9 @@ body {
   display: flex;
   gap: 50px;
   align-items: flex-start;
+  width: 100%;
+  max-width: 1200px;  
+  margin: 0 auto;     
 }
 
 /* Left side section ------------------ */
@@ -296,6 +299,48 @@ body {
   display: block;
 }
 
+/* lightbox css */
+
+.lightbox-caption.small {
+  font-size: 2em;
+  font-family: 'Raleway', Arial, Helvetica, sans-serif;
+}
+
+.modal-dialog {
+  transform: none !important;
+}
+
+.modal-content {
+  position: relative;
+}
+
+.modal.show .btn-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+
+  width: 2.2rem;
+  height: 2.2rem;
+
+  background-color: white;
+  opacity: 1;
+
+  z-index: 9999;
+}
+
+.modal .carousel-control-prev {
+  left: -35px;
+}
+
+.modal .carousel-control-next {
+  right: -35px;
+}
+
+.modal-open .detail-layout {
+  pointer-events: none;
+}
+
+
 /* Portfolio boxes ------ */
 
 .box-1 {
@@ -385,16 +430,39 @@ body {
 
 }
 
+/* mobile lightbox css */
+
+@media (max-width: 768px) {
+
+  .lightbox-caption.small {
+  font-size: 1em;
+  font-family: 'Raleway', Arial, Helvetica, sans-serif;
+}
+
+  body.modal-open {
+    position: fixed;
+    width: 100%;
+    overflow: hidden;
+  }
+  .modal-backdrop.show {
+    opacity: 1 !important;
+    background-color: black !important; 
+  }
+  .modal-content {
+    background: transparent;
+    border: none;
+  }
+}
+
 
 /* END OF STUDENT DETAIL CSS */
 
 
 
-
 /* FOOTER BACKGROUND */
 .footer {
-  background: #FDF5E6; /* light beige tone */
-  padding: 40px 20px;
+  background: #FDF5E6;
+  padding: 45px 50px; 
   position: relative;
 }
 
@@ -408,81 +476,99 @@ body {
   left: 0;
 }
 
-/* MAIN FOOTER CONTENT LAYOUT */
+/* MAIN LAYOUT */
 .footer-content {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  max-width: 1100px;
+  max-width: 1300px; 
   margin: 0 auto;
-  flex-wrap: wrap;
+  column-gap: 40px;
+  row-gap: 20px;
 }
 
-/* LEFT + RIGHT LOGOS */
+/* LEFT LOGO */
 .footer-left img {
-  max-width: 170px;
+  max-width: 190px; 
+  height: auto;
 }
 
-.footer-right img {
-  max-width: 140px;
-}
-
-/* CENTER SECTION */
+/* CENTER */
 .footer-center {
   text-align: center;
+  flex: 1;
 }
 
 /* TITLE */
 .footer-center h2 {
-  font-size: 2.5rem;
-  margin-bottom: 15px;
+  font-size: 2.2rem; 
+  font-family: "NovecentoSansWideBold", sans-serif;
+  margin-bottom: 12px;
+  text-align: center;
+
 }
 
-/* YEARS ROW */
+/* YEARS */
 .years {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  align-items: center;
+  gap: 22px; 
   margin-bottom: 10px;
 }
 
 /* YEAR TEXT */
 .years span {
-  position: relative;
+  font-size: 1.15rem; 
 }
 
-/* OPTIONAL: small decorative icons */
-.years span::after {
-  content: "•";
-  margin-left: 10px;
-  color: #999;
+/* COPYRIGHT */
+.footer-bottom {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
 }
 
-/* Remove dot from last year */
-.years span:last-child::after {
-  content: "";
+.footer-bottom .copyright {
+  text-align: center;
+  font-size: 1rem;
+  color: #333;
 }
 
-/* COPYRIGHT TEXT */
-.footer-center p {
-  font-size: 1.5rem;
-  color: #000;
-} 
-
-/* RIGHT SECTION (logo + acknowledgement side-by-side) */
+/* RIGHT SIDE */
 .footer-right {
   display: flex;
   align-items: center;
-  gap: 15px; /* space between logo and acknowledgement */
+  gap: 25px;
 }
 
+/* RIGHT LOGOS */
+.footer-right img {
+  height: 55px; /* was 45px */
+  width: auto;
+}
 
-
-/* Acknowledgement image */
+/* ACKNOWLEDGEMENT */
 .acknowledgement-right img {
-  max-width: 170px;
-  height: auto;
+  height: 50px; /* was 40px */
+  width: auto;
 }
+
+
+@media (max-width: 768px) {
+
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 25px;
+  }
+
+}
+
+/* END OF FOOTER */
+
 
 /* Homepage Background */
 body {
