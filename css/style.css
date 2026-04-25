@@ -647,6 +647,7 @@ h1 span
 {background-color: #FAF6E5;}
 
 /* Welcome*/
+.container {margin-top: 70px;}
 .welcome-h2 {
   text-align: center;
 }
@@ -660,13 +661,24 @@ h1 span
 
 }
 
+.designer {
+  margin-top: 70px;
+
+}
+
+#student-grid {
+  margin-bottom: 70px;
+
+}
 /* Student Images */
+.student-card {
+  max-width: 220px;
+}
 .student-image {
-  width: 200 px;
-  height: 200 px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   object-fit: cover;
-  object-position: center;
 }
 
 .student-info {
