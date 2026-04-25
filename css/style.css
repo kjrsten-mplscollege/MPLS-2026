@@ -302,8 +302,9 @@ body {
 /* lightbox css */
 
 .lightbox-caption.small {
-  font-size: 2em;
+  font-size: 1em;
   font-family: 'Raleway', Arial, Helvetica, sans-serif;
+  background-color: black;
 }
 
 .modal-dialog {
@@ -466,7 +467,7 @@ body {
   position: relative;
 }
 
-/* BLUE LINE AT TOP */
+/* blue line */
 .footer-line {
   width: 100%;
   height: 3px;
@@ -476,15 +477,15 @@ body {
   left: 0;
 }
 
-/* MAIN LAYOUT */
+/* Main layout */
 .footer-content {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   max-width: 1300px; 
   margin: 0 auto;
-  column-gap: 40px;
+  column-gap: 120px;
   row-gap: 20px;
 }
 
@@ -505,7 +506,8 @@ body {
   font-size: 2.2rem; 
   font-family: "NovecentoSansWideBold", sans-serif;
   margin-bottom: 12px;
-  text-align: center;
+  
+
 
 }
 
@@ -519,41 +521,42 @@ body {
 }
 
 /* YEAR TEXT */
-.years span {
+.years a {
   font-size: 1.15rem; 
-}
-
-/* COPYRIGHT */
-.footer-bottom {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  margin-top: 25px;
-}
-
-.footer-bottom .copyright {
-  text-align: center;
-  font-size: 1rem;
-  color: #333;
+  color: black;
+  text-decoration: none;
 }
 
 /* RIGHT SIDE */
 .footer-right {
   display: flex;
   align-items: center;
-  gap: 25px;
+  gap: 10px;
 }
 
-/* RIGHT LOGOS */
+/* RIGHT LOGO */
 .footer-right img {
-  height: 55px; /* was 45px */
+  height: 80px; 
   width: auto;
 }
 
 /* ACKNOWLEDGEMENT */
 .acknowledgement-right img {
-  height: 50px; /* was 40px */
+  height: 40px; 
   width: auto;
+}
+
+/* COPYRIGHT */
+.footer-bottom {
+  width: 100%;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.footer-bottom .copyright {
+  text-align: center;
+  font-size: 1rem;
+  color: #333;
 }
 
 
