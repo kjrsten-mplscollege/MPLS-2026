@@ -663,6 +663,7 @@ h1 span
 
 .designer {
   margin-top: 70px;
+  text-align: center;
 
 }
 
@@ -674,11 +675,66 @@ h1 span
 .student-card {
   max-width: 220px;
 }
+
+.student-image-container-yellow {
+  position: relative;
+  width: 220px;
+  height: 220px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("../images/yellow-bg.svg") center/contain no-repeat;
+}
+
+.student-image-container-blue {
+  position: relative;
+  width: 220px;
+  height: 220px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("../images/blue-bg.svg") center/contain no-repeat;
+}
+
+.student-image-container-orange {
+  position: relative;
+  width: 220px;
+  height: 220px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("../images/orange-bg.svg") center/contain no-repeat;
+}
+
+.student-image-container-green {
+  position: relative;
+  width: 220px;
+  height: 220px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("../images/green-bg.svg") center/contain no-repeat;
+}
+
+.student-image-container-pink {
+  position: relative;
+  width: 220px;
+  height: 220px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("../images/pink-bg.svg") center/contain no-repeat;
+}
 .student-image {
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   object-fit: cover;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
 }
 
 .student-info {
