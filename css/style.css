@@ -828,6 +828,12 @@ h1 span
   align-items: center;
   background: url("../images/pink-bg.svg") center/contain no-repeat;
 }
+
+.student-link, .student-link:visited, .student-link:hover, .student-link:active {
+  text-decoration: none;
+  color:black;
+}
+
 .student-image {
   width: 150px;
   height: 150px;
