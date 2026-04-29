@@ -393,7 +393,7 @@ body {
 
 .modal.show .btn-close {
   position: absolute;
-  top: 10px;
+  top: 40px !important;
   right: 10px;
 
   width: 2.2rem;
@@ -725,6 +725,8 @@ body {
   background-color: #FAF6E5;
 }
 
+/* End of Homepage Background */
+
 /* Top Logo */
 .top-logo {
   display: flex;
@@ -744,6 +746,8 @@ body {
 
 h1 span
 {background-color: #FAF6E5;}
+
+/* End of Top Logo */
 
 /* Welcome*/
 .container {margin-top: 70px;}
@@ -774,6 +778,9 @@ h1 span
   margin-bottom: 70px;
 
 }
+
+/* End of Welcome*/
+
 /* Student Images */
 .student-card {
   max-width: 220px;
@@ -857,3 +864,33 @@ h1 span
 .student-info h4 {
   margin-top: 0px;
 }
+
+/* End of Student Images */
+
+/* Video*/
+.video-show-headline, .video-reception-headline {
+background-color: #FAF6E5;
+display: inline;
+}
+ 
+.video {
+  width: 100%;
+  text-align: center;
+}
+
+
+.video-size iframe {
+  min-height: 500px;
+  border: 15px solid #2e4a9e;
+}
+
+.video-size {
+margin-top: 40px;
+}
+
+.video2 {
+  margin-bottom: 150px;
+}
+  
+/* End of Video */
+
