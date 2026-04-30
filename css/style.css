@@ -56,6 +56,14 @@ h3 {
   font-family: "NovecentoSansWideBold", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
+.showtimes {
+  text-align: center;
+  font-weight: bold;
+}
+
+a.credit {
+  color: #faf6e5;
+}
 
 #student-grid {
     display: flex;
